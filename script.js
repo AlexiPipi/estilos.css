@@ -1,3 +1,4 @@
+// Inicializar requisitos
 document.querySelectorAll('.subject').forEach(button => {
     let reqs = button.dataset.req ? button.dataset.req.split(',') : [];
     if (reqs.length > 0) {
@@ -5,6 +6,7 @@ document.querySelectorAll('.subject').forEach(button => {
     }
 });
 
+// Función para desbloquear materias
 function checkUnlockables() {
     document.querySelectorAll('.subject').forEach(button => {
         if (button.disabled && button.dataset.req) {
@@ -19,6 +21,7 @@ function checkUnlockables() {
     });
 }
 
+// Evento al hacer clic en una materia
 document.querySelectorAll('.subject').forEach(button => {
     button.addEventListener('click', () => {
         if (!button.disabled) {
@@ -28,4 +31,3 @@ document.querySelectorAll('.subject').forEach(button => {
         }
     });
 });
-
