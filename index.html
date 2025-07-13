@@ -1,1 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Carrera de Diseño de Indumentaria</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Carrera de Diseño de Indumentaria</h1>
+    <div class="grid">
+        <!-- Primer Año -->
+        <div class="year">
+            <h2>Primer Año</h2>
+            <button class="subject" data-id="medios1">Medios Expresivos 1</button>
+            <button class="subject" data-id="intro">Introducción al Proyecto</button>
+            <button class="subject" data-id="geom">Fundamentos Geométricos</button>
+            <button class="subject" data-id="prod1">Técnicas Producción Ind. Nac. 1</button>
+            <button class="subject" data-id="prod2" data-req="prod1">Téc. Prod. Ind. Nac. 2</button>
+            <button class="subject" data-id="hist1">Historia Diseño Ind. 1</button>
+            <button class="subject" data-id="anal1">Análisis Diseño Ind. 1</button>
+        </div>
+
+        <!-- Segundo Año -->
+        <div class="year">
+            <h2>Segundo Año</h2>
+            <button class="subject" data-id="medios2" data-req="medios1">Medios Expresivos 2</button>
+            <button class="subject" data-id="proj1" data-req="medios1,intro,geom,prod1,prod2">Proyecto Indumentaria 1</button>
+            <button class="subject" data-id="matproy" data-req="medios1,intro,geom,prod1">Materialización Proyecto</button>
+            <button class="subject" data-id="tp1" data-req="intro,prod1">Téc. Producción Indum. 1</button>
+            <button class="subject" data-id="tp2" data-req="prod1,prod2">Téc. Producción Indum. 2</button>
+            <button class="subject" data-id="hist2" data-req="hist1">Historia Diseño Ind. 2</button>
+            <button class="subject" data-id="anal2" data-req="anal1">Análisis Diseño Ind. 2</button>
+        </div>
+
+        <!-- Tercer Año -->
+        <div class="year">
+            <h2>Tercer Año</h2>
+            <button class="subject" data-id="proj2" data-req="proj1,medios2,matproy">Proyecto Indumentaria 2</button>
+            <button class="subject" data-id="proj3" data-req="proj2,tp2">Proyecto Indumentaria 3</button>
+            <button class="subject" data-id="com1" data-req="tp1,hist2">Comercialización y Mercado 1</button>
+            <button class="subject" data-id="com2" data-req="com1">Comercialización y Mercado 2</button>
+            <button class="subject" data-id="soc" data-req="hist1,intro,medios1">Sociología</button>
+            <button class="subject" data-id="tp3" data-req="tp2,medios1">Téc. Producción Indum. 3</button>
+            <button class="subject" data-id="tp4" data-req="tp3">Téc. Producción Indum. 4</button>
+            <button class="subject" data-id="acc1" data-req="medios2,proj2">Proyecto Accesorios 1</button>
+            <button class="subject" data-id="comcr" data-req="hist1">Comunicación y Crítica</button>
+        </div>
+
+        <!-- Cuarto Año -->
+        <div class="year">
+            <h2>Cuarto Año</h2>
+            <button class="subject" data-id="proj4" data-req="proj3,tp4">Proyecto Indumentaria 4</button>
+            <button class="subject" data-id="etica" data-req="proj1,intro">Ética Profesional</button>
+            <button class="subject" data-id="acc2" data-req="acc1">Proyecto Accesorios 2</button>
+            <button class="subject" data-id="opt" data-req="hist1,proj2,medios2">Materias Optativas 1 y 2</button>
+            <button class="subject" data-id="tfg" data-req="proj2,acc1">Trabajo Final de Carrera</button>
+            <button class="subject" data-id="ppaa" data-req="proj3,tp3,com2,soc,acc1,comcr">Prácticas Profesionales</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
 
