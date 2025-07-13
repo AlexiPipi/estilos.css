@@ -13,10 +13,12 @@ h1 {
 
 .grid {
     display: flex;
-    justify-content: center;
+    flex-direction: row;      /* columnas horizontales */
+    flex-wrap: nowrap;        /* no se bajan */
+    overflow-x: auto;         /* scroll horizontal si hace falta */
     gap: 20px;
-    flex-wrap: wrap;
     margin-top: 20px;
+    padding-bottom: 10px;
 }
 
 .year {
@@ -25,6 +27,7 @@ h1 {
     border-radius: 20px;
     padding: 10px;
     width: 230px;
+    flex-shrink: 0; /* evita que se achiquen en scroll horizontal */
 }
 
 .year h2 {
@@ -56,4 +59,3 @@ h1 {
     background-color: #ff66b2;
     color: white;
 }
-
