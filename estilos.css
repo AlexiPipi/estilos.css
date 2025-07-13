@@ -1,1 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe6f0;
+    color: #4a004d;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #cc0066;
+    font-size: 2em;
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.year {
+    background-color: #fff0f5;
+    border: 2px solid #ff99cc;
+    border-radius: 20px;
+    padding: 10px;
+    width: 230px;
+}
+
+.year h2 {
+    background-color: #ff99cc;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+.subject {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #ffcce6;
+    border: 1px solid #cc0066;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 90%;
+}
+
+.subject:disabled {
+    background-color: #f2f2f2;
+    color: #999;
+    cursor: not-allowed;
+}
+
+.subject.completed {
+    background-color: #ff66b2;
+    color: white;
+}
 
